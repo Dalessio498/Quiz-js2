@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ByteBrain - 2.0</title>
+</head>
+
+<script src="script.js"></script>
+
+<script>
+    function swowTip() {
+        document.getElementById("tip").innerHTML = "Think about how water falls down a cliff. In this language, styles 'fall' from the top to the bottom, allowing one rule to inherit properties from another."
+    }
+
+</script>
+
+<body>
+    <div class="vo-question">
+        <div class="question">
+            <div class="title-question">
+                <span>2.</span>
+                <h1>What means CSS</h1>
+            </div>
+            <div class="vo-cards">
+                <div class="flex-cards">
+                    <div class="answer">
+                        <button class="answer-button" onclick="verificar('0', this)">
+                            <span id="red">1</span>
+                            <h1>Cascading Style Syntax</h1>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <button class="answer-button" onclick="verificar('0', this)">
+                            <span id="blue">2</span>
+                            <h1>Creative Style Sheets</h1>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <button class="answer-button" onclick="verificar('1', this)">
+                            <span id="green">3</span>
+                            <h1>Cascading Style Sheets</h1>
+                        </button>
+                    </div>
+
+                    <div class="answer">
+                        <button class="answer-button" onclick="verificar('0', this)">
+                            <span id="yellow">4</span>
+                            <h1>Computer Style Sheet</h1>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="father-button">
+                <div class="time-button">Time</div>
+                <button type="button" class="tip-button-p" id="passar" onclick="window.location.href = 'question-3.html'" disabled>Next</button>
+                <button type="button" class="tip-button-p" id="retry" onclick="location.reload(true)" disabled>Retry</button>
+            </div>
+                   <button type="button" class="tip-button-p" id="tip" onclick="swowTip()"><p>Show Tip</p></button>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="text-footer">
+            <h1>Devolved by Marco Antonio Dalessio</h1>
+        </div>
+        <div class="contacts">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chivo Mono";
+}
+
+body {
+    background-image: linear-gradient(to top, rgb(116, 116, 116), rgb(88, 88, 88));
+}
+
+.vo-question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: fit-content;
+    border: 4px solid rgb(0, 0, 0);
+    margin: 0px 15px;
+    box-shadow: 8px 8px 0px black;
+    background-color: white;
+}
+
+.title-question {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.title-question span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.title-question h1 {
+    font-size: 1.7rem;
+    max-width: 400px;
+}
+
+.answer {
+    display: flex;
+    align-items: center;
+    border: 4px solid rgb(0, 0, 0);
+    margin: 5px 10px;
+     transition: 0.2s linear;
+      min-width: 300px;
+}
+
+.answer span {
+    font-size: 3rem;
+    border-right: 4px solid black;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+.answer h1 {
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+    text-align: start;
+}
+
+#red {
+    background-color: rgb(255, 83, 83);
+}
+
+#blue {
+    background-color: rgb(83, 157, 255);
+}
+
+#green {
+    background-color: rgb(83, 255, 112);
+}
+
+#yellow {
+    background-color: rgb(255, 229, 83);
+}
+
+
+.flex-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+
+.father-button {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.time-button,.tip-button-p {
+    box-shadow: 6px 6px 0px black;
+    border: 4px solid black;
+    background-color: white;
+    padding: 10px;
+    margin: 15px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    max-width: 320px;
+}
+
+.time-button {
+    max-height: fit-content;
+}
+
+.tip-button-p p {
+    display: flex;
+    flex-wrap: wrap;
+    inline-size: 100%; 
+    overflow-wrap: break-word; 
+    word-break: break-all;
+}
+
+.tip-button-p {
+    transition: 0.2s linear;
+}
+
+
+.tip-button-p:hover {
+    scale: 1.02;
+}
+
+.answer-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    width: 100%;
+    background-color: white;
+}
+
+.answer:hover {
+    scale: 1.02;
+}
+
+.answer:hover {
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    background-color: white;
+    padding: 30px 10px;
+}
+
+.text-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contacts {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.contacts i {
+    font-size: 2rem; 
+    color: black;
+    transition: 0.2s linear;
+}
+
+.contacts i:hover {
+    scale: 1.02;
+    transform: translateY(-5px);
+}
+
+#passar, #retry {
+    background-color: rgb(168, 168, 168);
+}
+
+#passar a, #retry a{
+    color: black;
+    text-decoration: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.certificado-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    border: 4px solid rgb(0, 0, 0);
+    margin: 5px 10px;
+    background-color: white;
+    box-shadow: 6px 6px 0px black;
+    padding: 20px 30px;
+}
+
+.certificado-box button {
+    background-color: white;
+    border: 4px solid black;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    box-shadow: 6px 6px 0px black;
+    transition: 0.3s linear;
+}
+
+.certificado-box button:hover {
+    background-color: rgb(152, 152, 255);
+    scale: 1.02;
+}
