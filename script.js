@@ -1,3 +1,19 @@
+tempo = 0;
+
+        passarTempo = setInterval(() => {
+            tempo++
+            document.getElementById('relogio').innerText = tempo;
+
+            if (tempo < 10) {
+                document.getElementById('relogio').innerText = '0' + tempo;
+            }
+
+            if (tempo > 10) {
+                document.getElementById('relogio').innerText = "Você perdeu!";
+                
+            }
+        }, 1000);
+
 let contador = 0
 
     function verificar(numero, elemento){
