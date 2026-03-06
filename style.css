@@ -188,6 +188,7 @@ footer {
 
 #passar, #retry {
     background-color: rgb(168, 168, 168);
+    cursor: not-allowed;
 }
 
 #passar a, #retry a{
